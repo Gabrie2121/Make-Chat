@@ -19,6 +19,7 @@
     display: grid;
 }
 .login{
+    cursor: pointer;
     text-decoration: none;
     text-align: center;
     margin: 5px;
@@ -27,12 +28,15 @@
     height: 100px;
     border-radius: 50px;
     outline: none;
+    box-shadow: none;
     border: 1px solid #141E30;
     background: linear-gradient(to right, #141e30, #243b55);
     font-size: 25px;
     color: white;
 }
 .login:focus,.login:hover{
+    outline: none;
+    box-shadow: none;
     background: linear-gradient(to right, #141e30, #243b55);
     transition: 1s;
     border: 2px solid #141ef3;
