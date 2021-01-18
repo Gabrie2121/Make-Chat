@@ -8,3 +8,5 @@ Iniciando UI da tela de chat
 Tela de Registro finalizada, enviando para a SessionStorage o nome de Usuario para uso futuro
 ### v4
 Tela Chat visual finalizada improvisada
+### v5
+Tela chat inicio Logica, criado indentificadores de grupos e mensagens
