@@ -13,7 +13,63 @@ body{
     background: linear-gradient(to bottom, #43c6ac, #191654);
 }
 .container{
-    width: 80vw;
-    height: 80vh;
     border: 1px solid #1f1f1fff;
+    border-radius: 10px;
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.left-side{
+    border-right: 1px solid #1f1f1fff;
+    text-align: center;
+}
+.left-side hr{
+    border: 1px solid #1f1f1ff3;
+}
+.right-side{
+    background-color: #f0f0f0df;
+    border-radius: 0px 10px 10px 0px;
+    display: grid;
+    grid-template-rows:1fr 10fr 1fr;
+}
+#username{
+    line-height: 49px;
+    border-bottom: 1px solid #1f1f1fff;
+}
+.title{
+    background-color: #fff;
+    height:50px;
+    border-bottom: 1px solid black;
+    border-radius: 0px 10px 0px 0px;
+}
+.chat{
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+    margin:auto;
+}
+#message{
+    width: 85%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+#send-button{
+    height: 30px;
+    width: 10%;
+    border-radius: 5px;
+    border: 1px solid green;
+    background-color: #01ff0f;
+}
+.send{
+    margin: 0px 0px 0px 40px;
+    display: flex;
+}
+#message:focus,#send-button:focus{
+    outline: none;
+}
+#send-button:hover{
+    background-color: #15c009;
 }

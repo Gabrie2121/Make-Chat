@@ -6,3 +6,5 @@ Layout da tela de Registro finalizado, com digitalização do nome de usuario pa
 Iniciando UI da tela de chat
 ### v3
 Tela de Registro finalizada, enviando para a SessionStorage o nome de Usuario para uso futuro
+### v4
+Tela Chat visual finalizada improvisada
