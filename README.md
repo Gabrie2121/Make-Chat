@@ -17,4 +17,4 @@ Finalizado a logica para recepção de mensagens, aguardando a criação do back
 ### v8
 Resolvido e melhorado alguns bugs visuais, continua bug visual em telas acima de 1366x768, ainda aguardando a criação do back-end
 ### v9
-Criado pelo Eder o api back-end, foi conectado via fetch com o front-end
+Resolução de bugs.

@@ -6,18 +6,25 @@ const send = document.querySelector('#send-button');
 const message = document.querySelector('#message');
 const idUser = sessionStorage.getItem('id')
 const h1Title = document.querySelector('#h1title');
-const server = fetch('http://45.233.50.124:3000/rooms').then((response =>response.json())).then(result =>{
+/**const server = fetch('http://45.233.50.124:3000/rooms').then((response =>response.json())).then(result =>{
     for (const resu of result) {
         groups.innerHTML += `<button class='group' id='${resu.id}'>${resu.name}</button>`
     }
-}) 
-const groupsArray = server
+    const groupsArray = server
+})*/ 
+const groupsArray = ['grupo1','grupo2','grupo3','grupo4','grupo5','grupo6','grupo7','grupo8','grupo9','grupo10',]
+
 const gerarNick = (nick) => {
     return sessionStorage.getItem(nick);
 }
 user.innerHTML = gerarNick('username')
 
-
+const gerarGroups=()=>{
+    for (const group of groupsArray) {
+        groups.innerHTML += `<button class='group' id='${group}'>${group}</button>`
+    }
+}
+gerarGroups();
 
 document.addEventListener('click',ChoiceGroup = e => {
     const el = e.target;
@@ -38,6 +45,8 @@ send.addEventListener('click', sendMsg =_=> {
                 chat.innerHTML += `<div class='msg'><span id='nick'>${gerarNick('username')}</span><br>${message.value}</div><hr>`
                 message.value = '' 
             }
+        }else{
+            alert('você não está logado, faça login por favor!!')
         }
         
     } else {
