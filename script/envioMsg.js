@@ -6,11 +6,6 @@ const send = document.querySelector('#send-button');
 const message = document.querySelector('#message');
 const idUser = sessionStorage.getItem('id')
 const groupsArray = ['grupo1', 'grupo2', 'grupo3', 'grupo4', 'grupo5', 'grupo6', 'grupo7', 'grupo8']
-const msgsFriends = [{
-    name: 'Raissa',
-    id: '01',
-    message: 'Hey sucker <3'
-}]
 const gerarNick = (nick) => {
     return sessionStorage.getItem(nick);
 }
@@ -23,13 +18,14 @@ const gerarGroup = (groupsAdd) => {
 }
 gerarGroup(groupsArray);
 
-document.addEventListener('click', e => {
+document.addEventListener('click',ChoiceGroup = e => {
     const el = e.target;
     //se o target conter alguma classe apagar 
     if (el.classList.contains('group')) {
         title.innerHTML = el.id;
         chat.id = el.id
         chat.innerHTML = ''
+        gerarMsg(el.id);
     }
 })
 send.addEventListener('click', sendMsg =_=> {
