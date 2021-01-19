@@ -10,3 +10,5 @@ Tela de Registro finalizada, enviando para a SessionStorage o nome de Usuario pa
 Tela Chat visual finalizada improvisada
 ### v5
 Tela chat inicio Logica, criado indentificadores de grupos e mensagens
+### v6
+Finalizado o script para envio de mensagens(front end apenas), com testes de construção
